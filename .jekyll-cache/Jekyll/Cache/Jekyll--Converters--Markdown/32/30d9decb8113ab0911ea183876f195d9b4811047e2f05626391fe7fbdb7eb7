@@ -1,0 +1,15 @@
+I"õ<!-- Get the tag name for every tag on the site and set them
+to the `site_tags` variable. -->
+
+<!-- `tag_words` is a sorted array of the tag names. -->
+
+<!-- List of all tags -->
+<ul class="tags">
+  
+</ul>
+
+<!-- Posts by Tag -->
+<div>
+  
+</div>
+:ET
