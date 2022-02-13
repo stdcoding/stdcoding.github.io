@@ -4,16 +4,6 @@ title: Frequently Asked Questions
 comments: true 
 permalink: /faqs/
 ---
-<!-- MarkdownTOC depth=1 -->
-
-<!-- - [1. Blog được tạo như thế nào?](#-blog-duoc-tao-nhu-the-nao)
-- [2. Các kiến thức cần thiết để học Machine Learning?](#-cac-kien-thuc-can-thiet-de-hoc-machine-learning)
-- [3. Hướng dẫn cài đặt python và các thư viện trên MacOS?](#-huong-dan-cai-dat-python-va-cac-thu-vien-tren-macos)
-- [4. Hướng dẫn cài đặt python và các thư viện trên Windows?](#-huong-dan-cai-dat-python-va-cac-thu-vien-tren-windows)
-- [5. Các sách tham khảo?](#-cac-sach-tham-khao)
-- [6. Làm thế nào để hỗ trợ blog](#-lam-the-nao-de-ho-tro-blog)
-
-<!-- /MarkdownTOC -->
 
 **Bạn cũng có thể đặt các câu hỏi và tham gia thảo luận tại:**
 [**Forum STD Coding**](https://www.facebook.com/groups/257768141347267/)
