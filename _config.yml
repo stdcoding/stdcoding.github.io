@@ -3,7 +3,7 @@ sass:
 
 permalink: /:year/:month/:day/:title.html
 
-url: https://stdcoding.com
+url: https://stdcoding.github.io
 baseurl: ""
 
 future: true
