@@ -6,7 +6,7 @@ permalink: /faqs/
 ---
 
 **Bạn cũng có thể đặt các câu hỏi và tham gia thảo luận tại:**
-[**Forum STD Coding**](https://www.facebook.com/groups/257768141347267/)
+[**Forum DevChuan.Com**](https://www.facebook.com/groups/257768141347267/)
 
 
 
@@ -32,7 +32,7 @@ Mới bạn đọc bài [Blog và các bài viết được tạo như thế nà
 ## 3. Hướng dẫn cài đặt python và các thư viện trên MacOS?
 **Xin cảm ơn facebook Nguyễn Nghĩa về phần hướng dẫn này:**
 
-Nhận thấy có một số bạn gặp khó khắn trong việc sử dụng source code trong các bài viết về STD Coding như việc cài đặt thư viện, import các thư viện đó để có thể chạy được những source trong các bài viết. Trong bài viết hôm nay tôi sẽ hướng dẫn các bạn cách cài đặt một số thư viện trên hệ điều hành MacOS nhằm phục vụ cho mục đích tìm hiểu và nghiên cứu về Machine Learning.
+Nhận thấy có một số bạn gặp khó khắn trong việc sử dụng source code trong các bài viết về DevChuan.Com như việc cài đặt thư viện, import các thư viện đó để có thể chạy được những source trong các bài viết. Trong bài viết hôm nay tôi sẽ hướng dẫn các bạn cách cài đặt một số thư viện trên hệ điều hành MacOS nhằm phục vụ cho mục đích tìm hiểu và nghiên cứu về Machine Learning.
 
 <a name="--doi-net-ve-thu-vien-scikit-learn"></a>
 
@@ -224,7 +224,7 @@ Với 1 thư viện chưa có trên Anaconda, cách cài đặt sẽ phức tạ
 
 ### 4.4. Chạy thử 1 đoạn code trên python.
 
-Bây giờ, các bạn đã có thể chạy thử 1 vài ví dụ trên trang STD Coding, ví dụ như [Bài 3: Linear Regression](/2016/12/28/linearregression/)
+Bây giờ, các bạn đã có thể chạy thử 1 vài ví dụ trên trang DevChuan.Com, ví dụ như [Bài 3: Linear Regression](/2016/12/28/linearregression/)
 
 
 
