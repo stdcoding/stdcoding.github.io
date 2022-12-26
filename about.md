@@ -8,7 +8,7 @@ sc_security: bf94eebb
 
 Cảm ơn bạn đã ghé thăm blog của tôi.
 
-Tôi là Luân Phạm, tốt nghiệp đại học bách khoa Đà Nẵng ngành Điện tử & Viễn Thông (Electronic and Telecommunication). Hiện tại tôi đang là senior software developer cho một công ty phần mềm ở Việt Nam. Các thông tin khác về tôi có thể được tim thấy ở [Linkedin của tôi](https://www.linkedin.com/in/luanpham107/).
+Tôi là Luân Phạm, tốt nghiệp đại học bách khoa ngành Điện tử & Viễn Thông (Electronic and Telecommunication). Hiện tại tôi đang là senior software developer cho một công ty phần mềm ở Việt Nam. Các thông tin khác về tôi có thể được tim thấy ở [Linkedin của tôi](https://www.linkedin.com/in/luanpham107/).
 
 Tôi viết blog này với hai mục đích chính. Một là tổng hợp lại các kiến thức của bản thân. Hai là tôi có mong muốn mang kiến thức về lập trình tới càng nhiều bạn đọc Việt Nam càng tốt, vì đây sẽ là một công việc được dự đoán là khan hiếm nhân lực "tay nghề cao" trong những năm sắp tới.
 

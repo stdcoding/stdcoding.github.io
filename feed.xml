@@ -8,7 +8,7 @@
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ site.url }}</id>
   <author>
-    <name>Tiep Vu</name>
+    <name>Luan Pham</name>
   </author>
   {% for post in site.posts limit:60 %}
   <entry>
