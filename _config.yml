@@ -25,18 +25,11 @@ disqus_shortname: techmakervn
 
 # number of posts per page. Should be a number such that total pages >= 5. Well, this 
 # is my choice, there is no specific reason for this.
-# Pagination Settings
-pagination:
-  enabled: true
-  per_page: 10
-  permalink: '/page/:num/'
-  title: ' - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
+paginate: 10
+paginate_path: "/page:num/"
 
 # `gems: [jekyll-paginate]`
 
-gems:
+plugins:
   - jekyll-sitemap
-  - jekyll-paginate-v2
+  - jekyll-paginate
