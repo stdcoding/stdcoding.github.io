@@ -16,7 +16,7 @@ Tôi rất vui được trao đổi thêm với các bạn ở phần Comment cu
 
 **>> Nếu bạn muốn trích dẫn lại các bài viết trong blog, [vui lòng xem thông tin tại đây](/copyrights/).**
 
-> Blog này được xây dựng dựa trên nền tảng Jekyll, sử dụng theme của anh Tiệp Vũ(github.com/tiepvupsu). Chân thành cảm ơn anh đã open source của theme này.
+> Blog này được xây dựng dựa trên nền tảng Jekyll, sử dụng theme của anh Tiệp Vũ(github.com/tiepvupsu). Mình đã chỉnh sửa phần config khá nhiều, tuy nhiên cũng rất chân thành cảm ơn anh đã open source của theme này.
 
 
 <b>>> Các bạn có thể theo dõi Facebook Page tại:</b> <br>
