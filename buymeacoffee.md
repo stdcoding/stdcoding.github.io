@@ -20,7 +20,6 @@ Tôi luôn mong muốn blog đến được với nhiều độc giả và luôn
 Nội dung trên blog này là hoàn toàn miễn phí. Tôi cũng không sử dụng dịch vụ quảng cáo nào vì không muốn gây mất tập trung các bạn trong khi đọc. Tuy nhiên, nếu bạn thấy nội dung hữu ích và muốn đóng góp cho blog, bạn có thể ủng hộ blog qua một trong hai cách:
 
 #### 1. Ngân hàng Vietcombank, chi nhánh Tân Bình
-<!-- (Khi chuyển các bạn vui lòng kèm trong ghi chú/mục đích chuyển từ khóa: **machinelearning**) -->
 
 Chủ tài khoản: **PHAM NGOC LUAN**
 
@@ -32,7 +31,7 @@ Bạn cũng có thể để lại một lời nhắn ở phần comment bên dư
 
 #### [Bạn đọc cũng có thể xem các reviews và review cho blog tại đây.](https://www.facebook.com/pg/kenhDTLT/reviews/)
 
-####  Mọi sự ủng hộ đều rất đáng quý
+####  Mọi sự ủng hộ đều rất đáng quý!
 
 Tôi xin chân thành cảm ơn. 
 
