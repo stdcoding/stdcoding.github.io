@@ -1,13 +1,13 @@
 ---
 layout: post
 comments: true
-title:  "Bài 1: Comment trong C++"
-title2:  "1. Comments trong C++"
-date:   2022-12-31 20:28:00
-permalink: 2022/12/31/introduce/
+title:  "Bài 2: Comment trong C++ 2"
+title2:  "2. Comments trong C++"
+date:   2023-01-05 20:31:00
+permalink: 2023/01/cpp-basic/cai-dat/
 mathjax: true
-tags: General
-categories: General
+tags: C++ Cpp cơ bản
+categories: C++_Basic
 # sc_project: 11213301
 # sc_security: 8d50f6a5
 img: /assets/introduce/aimldl.png
