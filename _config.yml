@@ -1,7 +1,7 @@
 sass:
   style: :compressed  # Change to :expanded for debugging
 
-permalink: /:year/:month/:day/:title.html
+permalink: /:year/:month/:title.html
 
 url: https://devchuan.com
 baseurl: ""

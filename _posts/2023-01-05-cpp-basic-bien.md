@@ -3,11 +3,11 @@ layout: post
 comments: true
 title:  "Bài 3: Comment trong C++"
 title2:  "3. Comments trong C++"
-date:   2022-12-31 20:32:00
-permalink: 2022/12/31/comment2/
+date:   2023-01-05 20:32:00
+permalink: 2023/01/cpp-basic/variable/
 mathjax: true
-tags: General
-categories: General
+tags: C++ Cpp cơ bản
+categories: C++_Basic
 # sc_project: 11213301
 # sc_security: 8d50f6a5
 img: /assets/introduce/aimldl.png
