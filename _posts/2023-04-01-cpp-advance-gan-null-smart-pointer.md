@@ -40,13 +40,13 @@ Sử dụng Smart Pointer giúp cho việc quản lý bộ nhớ trở nên an t
 Để khai báo Smart Pointer, ta cần sử dụng một trong các lớp Smart Pointer có sẵn trong thư viện chuẩn của C++. Hai lớp Smart Pointer phổ biến nhất trong C++ là _std::unique_ptr và std::shared_ptr_.
 
 Ví dụ, để khai báo một unique_ptr, ta có thể sử dụng cú pháp sau:
-```C++
+```cpp
 std::unique_ptr<int> myPointer = std::make_unique<int>(10);
 int myValue = *myPointer;
 std::shared_ptr<int> myPointer = std::make_shared<int>(10);
 ```
 Trong trường hợp của shared_ptr, ta có thể sử dụng cú pháp sau để khai báo một shared_ptr:
-```C++
+```cpp
 std::shared_ptr<int> myPointer = std::make_shared<int>(10);
 ```
 Tương tự như unique_ptr, ta cũng có thể sử dụng toán tử * để truy xuất giá trị mà con trỏ quản lý.
@@ -54,7 +54,7 @@ Tương tự như unique_ptr, ta cũng có thể sử dụng toán tử * để 
 Khi không còn cần sử dụng Smart Pointer, ta không cần phải giải phóng bộ nhớ thủ công bằng cách sử dụng delete. Thay vào đó, khi Smart Pointer ra khỏi phạm vi, nó sẽ tự động giải phóng bộ nhớ mà nó đang quản lý.
 
 Ví dụ sau đây minh họa cách sử dụng Smart Pointer trong C++:
-```C++
+```cpp
 #include <iostream>
 #include <memory>
 
@@ -78,12 +78,16 @@ int main()
 
     return 0;
 }
-Kết quả khi chạy:
+```
+
+Và đây là kết quả khi chạy:
+
 ```Log
 Giá trị của con trỏ là: 10
 Giá trị của shared pointer là: 20
 ```
 <a name="-so-sanh-smartpointer-va-con-tro-thuong"></a>
+
 ## III. So sánh Smartpointer và con trỏ thường
 Smart Pointer và con trỏ thường đều là cách để quản lý bộ nhớ trong C++. Tuy nhiên, chúng có những khác biệt cơ bản sau đây:
 
@@ -95,20 +99,25 @@ Smart Pointer và con trỏ thường đều là cách để quản lý bộ nh�
 Tóm lại, Smart Pointer là một cách để quản lý bộ nhớ an toàn hơn và dễ sử dụng hơn so với con trỏ thường. Tuy nhiên, trong một số trường hợp, sử dụng con trỏ thường vẫn là cách tốt nhất để giải quyết các vấn đề liên quan đến quản lý bộ nhớ.
 
 <a name="-mot-so-thac-mac-thuong-gap"></a>
+
 ## IV. Một số thắc mắc thường gặp khi sử dụng smartpointer
+
 <a name="-co-nen-gan-null-cho-smartpointer"></a>
 ### 1. Có nên gán con smartpointer bằng null sau khi sử dụng không?
 Smart pointer được thiết kế để quản lý một con trỏ và tự động giải phóng bộ nhớ được cấp phát khi nó không còn được sử dụng. Việc gán nullptr cho smart pointer sẽ làm mất đi khả năng quản lý con trỏ và sẽ không tự động giải phóng bộ nhớ được cấp phát bởi con trỏ đó. Thay vào đó, khi không muốn smart pointer trỏ đến bất kỳ đối tượng nào, bạn nên sử dụng phương thức _reset_ để giải phóng con trỏ và thiết lập smart pointer thành một trạng thái không trỏ đến đối tượng nào:
 
 Code ví dụ:
-```C++
+```cpp
 std::unique_ptr<int> ptr = std::make_unique<int>(42);
 ptr.reset(); // giải phóng con trỏ và thiết lập smart pointer thành nullptr
 ```
+
 Vì vậy, kết luận của mình là không nên gán nullptr (hay NULL trong C++03) cho một smart pointer, vì điều này có thể dẫn đến việc truy cập bộ nhớ không hợp lệ (segmentation fault) hoặc gây ra lỗi logic trong chương trình.
 
 <a name="-luc-nao-can-xai-smartpointer"></a>
+
 ### 2. Lúc nào nên dùng smartpointer, lúc nào dùng con trỏ thường
+
 Có thể sử dụng Smart Pointer trong hầu hết các trường hợp khi cần quản lý bộ nhớ trong C++. Tuy nhiên, đối với một số trường hợp đặc biệt, sử dụng con trỏ thường vẫn là lựa chọn tốt hơn. Dưới đây là một số lời khuyên về lựa chọn giữa Smart Pointer và con trỏ thường:
 
 - Sử dụng Smart Pointer khi:
