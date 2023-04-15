@@ -10,7 +10,7 @@ tags: C++ Singleton Design-pattern
 categories: Design-pattern
 # sc_project: 11213301
 # sc_security: 8d50f6a5
-img: /assets/cpp/cpp-programming-400x250.png
+img: /assets/images/design-patterns/design-pattern-01-singleton.jpg
 summary: Singleton Design Pattern là một trong những mẫu thiết kế phần mềm phổ biến trong lập trình hướng đối tượng
 ---
 **Trong trang này:**
