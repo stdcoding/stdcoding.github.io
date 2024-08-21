@@ -1,0 +1,32 @@
+# Top Menu
+topmenu:
+
+- title: Trang chủ
+  url: ""
+
+- title: Về chúng tôi
+  url: "about/"
+
+- title: Liên hệ
+  url: "contact/"
+
+- title: Các khóa học
+  url: https://codebase-edu.github.io/
+  class: "ml-2 btn btn-dark text-white px-3"
+  external: true
+
+# Footer Menu
+footermenu:
+
+- title: Trang chủ
+  url: ""
+
+- title: Bản quyền
+  url: "privacy-policy/"
+
+- title: Liên hệ
+  url: "contact/"
+
+- title: Khóa học
+  url: https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/  
+  external: true

@@ -1,86 +1,119 @@
 ---
 layout: default
-metadata: true
-style:
- name: post
- embedded: false
+disqus: false
+archive: false
+post_class: post-template
 ---
 
+<!-- Begin Article
+================================================== -->
 
-<!-- <div class = "row"> -->
-   <!-- <div class = "col-xs-12 hidden-md hidden-lg"> -->
-      <!-- previous and next posts -->
-      <div class="PageNavigation">
-         {% if page.previous.url %}
-            <a class="prev" style = "color: #074B80;" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-         <!-- <hr> -->
-         {% endif %}
-         {% if page.next.url %}
-            <a class="next" style = "float: right; color: #074B80;" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-         <hr>
-         {% endif %}
-      </div>
-  <!-- </div> -->
-<!-- </div> -->
-<h1 itemprop="name" class="post-title">{{ page.title }}</h1>
+	<div class="row">
+		
 
-{% if page.tags %}
-<ul class = "tags">
-   {% for tag in page.tags %}
-      <a href="/tags#{{ tag }}" class="tag">{{ tag }}</a>
-   {% endfor %}
-</ul>
-{% endif %}
-{% if page.date %}
+		<!-- Post -->        
+        {% assign author = site.authors[page.author] %}
+        
+		<div class="col-sm-8">
+            <!-- Post Featured Image -->
+			{% if page.image %}<img class="featured-image img-fluid rounded" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">{% endif %}
+			<!-- End Featured Image -->
+			<div class="mainheading">             
+                
+                <!-- Post Categories -->
+                <div class="after-post-tags">
+                    <ul class="tags">
+                        {% assign sortedCategories = page.categories | sort %}
+                        {% for category in sortedCategories %}
+                        <li>
+                         <a href="{{ site.baseurl }}/categories#{{ category | slugify }}">{{ category }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <!-- End Categories -->
+                
+                <!-- Post Title -->
+				<h1 class="posttitle">{{ page.title }}</h1> 
+                
+			</div>
 
-<span class = "post-date" style="color: gray; font-style: italic;">{{ page.date | date: "%b %-d, %Y" }}
-            </span>
-<!-- Main content -->
-<br>
-<br>
-{% endif %}
+			
+
+			<!-- Post Content -->
+			<div class="article-post serif-font">
+				{{content}}
+                <div class="clearfix"></div>
+			</div>
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+            
+			
+            
+            <!-- Prev/Next -->
+            <div class="row PageNavigation mt-4 prevnextlinks d-flex justify-content-between">
+              {% if page.previous.url %}
+                <div class="col-md-6 rightborder pl-0">
+                    <a class="thepostlink" href="{{page.previous.url | absolute_url}}">&laquo; {{page.previous.title}}</a>
+                </div>
+              {% endif %}
+              {% if page.next.url %}
+                <div class="col-md-6 text-right pr-0">
+                    <a class="thepostlink" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo;</a>
+                </div>
+              {% endif %}
+            </div>
+            <!-- End Prev/Next -->
+            
+            
+             <!-- Author Box -->
+                {% if page.author %}				
+				<div class="row post-top-meta">
+					<div class="col-md-2">
+						<img class="author-thumb" src="{{site.baseurl}}/{{author.avatar}}" alt="{{ author.display_name }}">
+					</div>
+					<div class="col-md-10">
+						<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+						<span class="author-description">{{ author.description }}</span>						
+					</div>
+				</div>				
+                {% endif %}
+            
+            
+            <!-- Begin Comments
+            ================================================== -->
+            <section>
+            <div id="comments">                          
+                {% include disqus.html %} 
+            </div>
+            </section>
+            <!--End Comments
+            ================================================== -->
+            
+            
+
+		</div>
+		<!-- End Post -->
 
 
-<div itemprop="articleBody">
-   {{ content }}
-</div>
+        
 
-<hr> 
-<em>Nếu có câu hỏi, Bạn có thể để lại comment bên dưới hoặc trên <a href = "https://www.facebook.com/groups/669110626869495/">Forum</a> để nhận được câu trả lời sớm hơn.</em>
-<br>
-<em>Bạn đọc có thể ủng hộ blog qua <a href = "/buymeacoffee/">'Buy me a cofee'</a> ở góc trên bên trái của blog.
-</em>
+		<!-- Sidebar -->
+        <div class="col-sm-4">
+            {% include sidebar.html %}
+            </div>
+        
+        
 
-<br>
+	</div>
 
-Cảm ơn bạn.</em>
-
-<hr>
-
-<!-- previous and next posts -->
-<div class="PageNavigation">
-   {% if page.previous.url %}
-      <a class="prev" style = "color: #204081;" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-   {% endif %}
-   {% if page.next.url %}
-      <a class="next" style = "float: right; color: #204081;" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-   {% endif %}
-</div>
-
-
-<!-- disqus comments -->
-{% if page.comments %}
-      <hr>
-   {% include disqus_comments.html %}
-{% endif %}
-
-{% include stat_counter.html %}
-<!-- <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
-
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-<!-- 
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?...">
-</script> -->
+<!-- End Article
+================================================== -->

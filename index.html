@@ -1,97 +1,60 @@
 ---
-layout: post
-pagination: 
-  enabled: true
-comments: true 
-scripts:
- - index
+title: Home
+layout: default
+background: '/img/bg-index.jpg'
 ---
 
-
-{% include pagination.html %}
-<hr> 
-<ul class = "posts">
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <div class = "row">
-        <div class = "col-lg-3 col-md-3 hidden-xs hidden-sm">
-            <a href = "{{ post.url | prepend: site.baseurl }}""><img src = "{{ post.img }}" style= "max-width: 100%" > </a>
-        </div>
-
-        <div class = "col-lg-8 col-md-8 hidden-xs hidden-sm">
-            <a class="post-link" style = "text-align: left; color: #204081; font-weight: bold"  href="{{ post.url | prepend: site.baseurl }}" > {{ post.title }}</a>
-            <span class = "post-date" style="float: right; ">{{ post.date | date: "%b %-d, %Y" }}
-            </span>
-            <br>
-            {% if post.tags %}    
-                <ul class = "tags">
-                    {% for tag in post.tags %}
-                        <a href="/tags#{{ tag }}" class="tag">{{ tag }}</a>
-                    {% endfor %}
-                </ul>
-            {% endif %}
-            {{ post.summary }} <a href = "{{ post.url | prepend: site.baseurl }}" sylte = "color: #204081;">Xem tiếp &raquo; </a>
-        </div>
+<!-- Home Intro
+================================================== -->
+{% if page.url == "/" %} 
+<div class="rounded mb-5 hero">
+  <div class="row align-items-center justify-content-between">
+    <div class="col-md-6">
+      <h1 class="font-weight-bold mb-4 serif-font">codebase-edu.github.io</h1>
+      <p class="lead mb-4">Code Base nơi chia sẻ kiến thức lập trình từ những kĩ sư phần mềm hơn 10 năm kinh nghiệm.</p>
+      <a href="{{site.baseurl}}/about" class="btn btn-dark text-white px-5 btn-lg">Xem thêm</a>
     </div>
-    
-    <div class = "row">
-        <div class = "col-xs-12 col-sm-12 hidden-md hidden-lg">
-            <a class="post-link" style = "text-align: left; color: #204081; font-weight: bold"  href="{{ post.url | prepend: site.baseurl }}" > {{ post.title }}</a>
-            <span class = "post-date" style="float: right; ">{{ post.date | date: "%b %-d, %Y" }}
-            </span>
-            <br>
-            {% if post.tags %}    
-                <ul class = "tags">
-                    {% for tag in post.tags %}
-                        <a href="/tags#{{ tag }}" class="tag">{{ tag }}</a>
-                    {% endfor %}
-                </ul>
-            {% endif %}
-            {{ post.summary }} <a href = "{{ post.url | prepend: site.baseurl }}" sylte = "color: #204081;">Xem tiếp&raquo; </a>
-        </div>
+    <div class="col-md-6 text-right pl-0 pl-lg-4">
+      <img class="intro" height="500" src="{{site.baseurl}}/assets/images/intro.svg">      
     </div>
-    <hr>
-{% endfor %}
-</ul>
-<!-- Pagination links -->
-<!-- <div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
+  </div>
 </div>
- -->
+{% endif %}
 
+<!-- Featured
+================================================== -->
+<section class="row">
+  {% for post in site.posts %}
+      {% if post.featured == true %}
+          <div class="col-md-4 mb-5">
+          {% include postbox.html %}
+          </div>
+      {% endif %}
+  {% endfor %}
+  </div>
+</section>
 
-
-
-{% include pagination.html %}
-<hr> 
-<div style="text-align:right">
-Total visits: 
-<!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=11312058; 
-var sc_invisible=0; 
-var sc_security="462ef68b"; 
-var sc_text=2; 
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="web statistics"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="//c.statcounter.com/11312058/0/462ef68b/0/" alt="web
-statistics"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
-</div>
+<!-- Posts List with Sidebar (except featured)
+================================================== -->
+<section class="row">
+  <div class="col-sm-8">
+    <div class="row">
+      {% for post in paginator.posts %}
+      {% unless post.featured == true %}
+      <div class="col-md-6 mb-5">
+        {% include postbox.html %}
+      </div>
+      {% endunless %}
+      {% endfor %}
+    </div>
+    <!-- Pagination -->
+    <div class="bottompagination">
+      <span class="navigation" role="navigation">
+          {% include pagination.html %}
+      </span>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    {% include sidebar.html %}
+  </div>
+</section>
