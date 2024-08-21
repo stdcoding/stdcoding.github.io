@@ -10,6 +10,7 @@ tags: C++ C++-cơ-bản
 categories: C++-Basic
 # sc_project: 11213301
 # sc_security: 8d50f6a5
-img: /assets/cpp/cpp-programming-400x250.png
+image: assets/images/cpp/cpp-programming-400x250.png
 summary: Hướng dẫn cài đặt bộ công cụ để học lập trình C++
 ---
+Hướng dẫn cài đặt bộ công cụ để học lập trình C++

@@ -10,6 +10,7 @@ tags: C++ C++-cơ-bản
 categories: C++-Basic
 # sc_project: 11213301
 # sc_security: 8d50f6a5
-img: /assets/cpp/cpp-programming-400x250.png
+image: assets/images/cpp/cpp-programming-400x250.png
 summary: Tại sao nên học C++, mức thu nhập, cơ hội việc làm và thăng tiến
 ---
+Tại sao nên học C++, mức thu nhập, cơ hội việc làm và thăng tiến

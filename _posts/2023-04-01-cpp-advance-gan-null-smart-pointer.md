@@ -10,7 +10,7 @@ tags: C++ Smart-Pointer
 categories: C++-Advance
 # sc_project: 11213301
 # sc_security: 8d50f6a5
-img: /assets/cpp/cpp-programming-400x250.png
+image: assets/images/cpp/cpp-programming-400x250.png
 summary: Smartpointer không phải là 1 khái niệm quá mới mẻ trong C++, tuy nhiên nhiều anh em vẫn chưa tận dụng hết khả năng của smartpointer
 ---
 **Trong trang này:**

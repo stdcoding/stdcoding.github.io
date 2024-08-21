@@ -10,7 +10,7 @@ tags: C++ Adapter Design-pattern
 categories: Design-pattern
 # sc_project: 11213301
 # sc_security: 8d50f6a5
-img: /assets/images/design-patterns/Adapter_design_pattern.png
+image: assets/images/design-patterns/Adapter_design_pattern.png
 summary: Adapter Design Pattern cho phép các đối tượng khác nhau có thể làm việc cùng nhau một cách dễ dàng thay vì phải sửa đổi mã nguồn
 ---
 **Trong trang này:**
