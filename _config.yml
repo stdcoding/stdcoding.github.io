@@ -3,7 +3,7 @@ sass:
 
 permalink: /:year/:month/:title.html
 
-url: https://devchuan.com
+url: https://codebase-edu.github.io
 baseurl: ""
 
 future: true

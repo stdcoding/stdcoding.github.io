@@ -35,3 +35,4 @@ assets/*/.ipynb_checkpoints
 .DS_Store
 _posts/.fuse_hidden*
 .jekyll-cache/
+Gemfile.lock
